@@ -65,6 +65,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(![-a-zA-Z$._][-a-zA-Z$._0-9]*)</string>
+			<key>name</key>
+			<string>variable.metadata.llvm</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>;.*$</string>
 			<key>name</key>
 			<string>comment.llvm</string>
