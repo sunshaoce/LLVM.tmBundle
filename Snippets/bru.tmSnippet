@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>br label ${1:dest}</string>
+	<string>br label %${1:dest}</string>
 	<key>name</key>
 	<string>bru</string>
 	<key>scope</key>
