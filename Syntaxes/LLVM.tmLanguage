@@ -77,7 +77,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b\d+\.\d+\b</string>
+			<string>\b\d+\.\d+(e-?\d+)\b</string>
 			<key>name</key>
 			<string>constant.numeric.float.llvm</string>
 		</dict>
