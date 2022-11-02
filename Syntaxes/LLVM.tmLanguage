@@ -41,7 +41,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(void|i\d+\**|half|float|double|fp128|x86_fp80|ppc_fp128|x86mmx|label|metadata)</string>
+			<string>\b(void|i\d+\**|half|float|double|fp128|x86_fp80|ppc_fp128|x86mmx|ptr|label|metadata)</string>
 			<key>name</key>
 			<string>storage.type.language.llvm</string>
 		</dict>
