@@ -21,7 +21,113 @@
 			<key>comment</key>
 			<string>llvm instructions</string>
 			<key>match</key>
-			<string>\b(add|alloca|and|ashr|atomic|atomicrmw|bitcast|br|call|cmpxchg|eq|exact|extractelement|extractvalue|fadd|fcmp|fdiv|fence|fmul|fpext|fptosi|fptoui|fptrunc|frem|fsub|getelementptr|icmp|inbounds|indirectbr|insertelement|insertvalue|inttoptr|invoke|landingpad|load|lshr|mul|ne|nsw|nuw|oeq|oge|ogt|ole|olt|one|or|ord|phi|ptrtoint|resume|ret|sdiv|select|sext|sge|sgt|shl|shufflevector|sitofp|sle|slt|srem|store|sub|switch|to|trunc|udiv|ueq|uge|uge|ugt|ugt|uitofp|ule|ule|ult|ult|une|uno|unreachable|unwind|urem|va_arg|xor|zext)\b(?!\s*:)</string>
+			<string>(?x)\b(
+				[ ]x[ ] |
+				add |
+				afn |
+				alloca |
+				and |
+				arcp |
+				ashr |
+				atomic |
+				atomicrmw |
+				bitcast |
+				br |
+				call |
+				cleanup |
+				cmpxchg |
+				contract |
+				dso_local |
+				eq |
+				exact |
+				extractelement |
+				extractvalue |
+				fadd |
+				fast |
+				fcmp |
+				fdiv |
+				fence |
+				fmul |
+				fneg |
+				fpext |
+				fptosi |
+				fptoui |
+				fptrunc |
+				frem |
+				fsub |
+				getelementptr |
+				icmp |
+				inbounds |
+				indirectbr |
+				insertelement |
+				insertvalue |
+				inttoptr |
+				invoke |
+				landingpad |
+				load |
+				lshr |
+				mul |
+				ne |
+				ninf |
+				nnan |
+				nneg |
+				noundef |
+				nsw |
+				nsz |
+				nuw |
+				oeq |
+				oge |
+				ogt |
+				ole |
+				olt |
+				one |
+				or |
+				ord |
+				phi |
+				poison |
+				ptrtoint |
+				reassoc |
+				resume |
+				ret |
+				sdiv |
+				select |
+				sext |
+				sge |
+				sgt |
+				shl |
+				shufflevector |
+				sitofp |
+				sle |
+				slt |
+				splat |
+				srem |
+				store |
+				strictfp |
+				sub |
+				switch |
+				to |
+				trunc |
+				udiv |
+				ueq |
+				uge |
+				uge |
+				ugt |
+				ugt |
+				uitofp |
+				ule |
+				ule |
+				ult |
+				ult |
+				une |
+				uno |
+				unreachable |
+				unwind |
+				urem |
+				va_arg |
+				vscale |
+				xor |
+				zext
+				)\b(?!\s*:)</string>
 			<key>name</key>
 			<string>keyword.instruction.llvm</string>
 		</dict>
@@ -29,7 +135,135 @@
 			<key>comment</key>
 			<string>llvm keywords</string>
 			<key>match</key>
-			<string>\b(acq_rel|acquire|addrspace|alias|align|alignstack|alwaysinline|appending|argmemonly|attributes|asm|blockaddress|byval|c|cc|ccc|coldcc|common|constant|convergent|datalayout|declare|default|define|deplibs|dereferenceable|dereferenceable_or_null|dllexport|dllimport|except|extern_weak|external|false|fastcc|gc|global|hidden|inalloca|inaccessiblememonly|inaccessiblemem_or_argmemonly|inlinehint|inreg|internal|jumptable|linkonce|linkonce_odr|local_unnamed_addr|metadata|minsize|module|monotonic|naked|nest|noalias|nobuiltin|noduplicate|nonnull|nocapture|noimplicitfloat|noinline|nonlazybind|noredzone|noreturn|norecurse|nounwind|null|opaque|optnone|optsize|personality|prefix|prologue|private|protected|ptx_device|ptx_kernel|readnone|readonly|release|returned|returns_twice|safestack|sanitize_address|sanitize_memory|sanitize_thread|section|seq_cst|sideeffect|signext|sret|ssp|sspreq|sspstrong|swiftself|swifterror|tail|target|thread_local|triple|true|type|undef|unnamed_addr|unordered|uwtable|volatile|weak|weak_odr|writeonly|x86_fastcallcc|x86_stdcallcc|zeroext|zeroinitializer)\b(?!\s*:)</string>
+			<string>(?ix)\b(
+				acq_rel |
+				acquire |
+				addrspace |
+				alias |
+				align |
+				alignstack |
+				alwaysinline |
+				appending |
+				argmemonly |
+				asm |
+				attributes |
+				blockaddress |
+				byval |
+				c |
+				cc |
+				ccc |
+				coldcc |
+				common |
+				constant |
+				convergent |
+				datalayout |
+				declare |
+				default |
+				define |
+				deplibs |
+				dereferenceable |
+				dereferenceable_or_null |
+				distinct |
+				disjoint |
+				dllexport |
+				dllimport |
+				except |
+				extern_weak |
+				external |
+				false |
+				fastcc |
+				gc |
+				global |
+				hidden |
+				immarg |
+				inaccessiblemem_or_argmemonly |
+				inaccessiblememonly |
+				inalloca |
+				inlinehint |
+				inreg |
+				internal |
+				jumptable |
+				linkonce |
+				linkonce_odr |
+				local_unnamed_addr |
+				memory |
+				metadata |
+				minsize |
+				module |
+				monotonic |
+				mustprogress |
+				naked |
+				nest |
+				noalias |
+				nobuiltin |
+				nocallback |
+				nocapture |
+				noduplicate |
+				nofree |
+				noimplicitfloat |
+				noinline |
+				none |
+				nonlazybind |
+				nonnull |
+				norecurse |
+				noredzone |
+				noreturn |
+				nosync |
+				nounwind |
+				null |
+				opaque |
+				optnone |
+				optsize |
+				personality |
+				prefix |
+				private |
+				prologue |
+				protected |
+				ptx_device |
+				ptx_kernel |
+				range |
+				readnone |
+				readonly |
+				readwrite |
+				release |
+				returned |
+				returns_twice |
+				safestack |
+				sanitize_address |
+				sanitize_memory |
+				sanitize_thread |
+				section |
+				seq_cst |
+				shadowcallstack |
+				sideeffect |
+				signext |
+				source_filename |
+				sret |
+				ssp |
+				sspreq |
+				sspstrong |
+				swifterror |
+				swiftself |
+				tail |
+				target |
+				thread_local |
+				triple |
+				true |
+				type |
+				undef |
+				unnamed_addr |
+				unordered |
+				uwtable |
+				volatile |
+				weak |
+				weak_odr |
+				willreturn |
+				writeonly |
+				x86_fastcallcc |
+				x86_stdcallcc |
+				zeroext |
+				zeroinitializer
+				)\b(?!\s*:)</string>
 			<key>name</key>
 			<string>storage.modifier.llvm</string>
 		</dict>
@@ -41,7 +275,20 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(void|i\d+\**|half|float|double|fp128|x86_fp80|ppc_fp128|x86mmx|ptr|label|metadata)</string>
+			<string>(?x)\b(
+				bfloat |
+				double |
+				float |
+				fp128 |
+				half |
+				i\d+\** |
+				metadata |
+				ppc_fp128 |
+				ptr |
+				void |
+				x86_fp80 |
+				x86mmx
+				)</string>
 			<key>name</key>
 			<string>storage.type.language.llvm</string>
 		</dict>
@@ -59,6 +306,12 @@
 		</dict>
 		<dict>
 			<key>match</key>
+			<string>(#\d+)</string>
+			<key>name</key>
+			<string>variable.metadata.llvm</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>(!\d+)</string>
 			<key>name</key>
 			<string>variable.metadata.llvm</string>
@@ -70,6 +323,34 @@
 			<string>variable.metadata.llvm</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.label.llvm</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>([-.A-Za-z0-9_]+):</string>
+			<key>name</key>
+			<string>meta.function.label.ir</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.label.llvm.2</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(label[ ]+%[-.A-Za-z0-9_]+)\b</string>
+			<key>name</key>
+			<string>meta.function.label.ir.2</string>
+		</dict>
+		<dict>
 			<key>match</key>
 			<string>;.*$</string>
 			<key>name</key>
@@ -77,7 +358,11 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b\d+\.\d+(e-?\d+)\b</string>
+        <string>(?ix)\b(
+          \d+\.\d+ |
+          \d+\.\d+[e][+-]\d+ |
+          \d+|0(x|X)[a-fA-F0-9]+(\.[a-fA-F0-9]*)?c?p[+-]\d+
+          )\b</string>
 			<key>name</key>
 			<string>constant.numeric.float.llvm</string>
 		</dict>
@@ -100,7 +385,7 @@
 					<key>match</key>
 					<string>\\..</string>
 					<key>name</key>
-					<string>constant.character.escape.lvvm</string>
+					<string>constant.character.escape.llvm</string>
 				</dict>
 			</array>
 		</dict>
