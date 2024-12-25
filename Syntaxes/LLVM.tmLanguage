@@ -89,6 +89,7 @@
 				reassoc |
 				resume |
 				ret |
+				samesign |
 				sdiv |
 				select |
 				sext |
