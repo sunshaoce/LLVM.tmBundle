@@ -164,8 +164,8 @@
 				deplibs |
 				dereferenceable |
 				dereferenceable_or_null |
-				distinct |
 				disjoint |
+				distinct |
 				dllexport |
 				dllimport |
 				except |
@@ -173,6 +173,7 @@
 				external |
 				false |
 				fastcc |
+				freeze |
 				gc |
 				global |
 				hidden |
@@ -259,6 +260,7 @@
 				weak |
 				weak_odr |
 				willreturn |
+				write |
 				writeonly |
 				x86_fastcallcc |
 				x86_stdcallcc |
