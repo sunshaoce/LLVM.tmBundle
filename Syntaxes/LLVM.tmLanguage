@@ -143,6 +143,7 @@
 				alias |
 				align |
 				alignstack |
+				allocsize |
 				alwaysinline |
 				appending |
 				argmemonly |
@@ -159,6 +160,7 @@
 				convergent |
 				datalayout |
 				declare |
+				dead_on_unwind |
 				default |
 				define |
 				deplibs |
@@ -260,6 +262,7 @@
 				weak |
 				weak_odr |
 				willreturn |
+				writable |
 				write |
 				writeonly |
 				x86_fastcallcc |
