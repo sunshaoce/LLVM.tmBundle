@@ -259,6 +259,7 @@
 				unordered |
 				uwtable |
 				volatile |
+				vscale_range |
 				weak |
 				weak_odr |
 				willreturn |
